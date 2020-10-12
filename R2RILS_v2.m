@@ -10,6 +10,15 @@ function [X_hat, U_hat, lambda_hat, V_hat, observed_RMSE, iter, convergence_flag
 % r = target rank of reconstructed matrix
 % opts: options meta-variable (see opts_default for details)
 %
+% OUTPUT:
+% X_hat: rank r approximation of X0.
+% U_hat: matrix of left singular vectors of X_hat.
+% lambda_hat: singular values of X_hat.
+% V_hat: matrix of right singular vectors of X_hat.
+% observed_RMSE: the RMSE of X_hat on the observed entires of X0.
+% iter: final iteration number of the algorithm.
+% convergence_flag: incdicating whether the algorithm converged.
+%
 
 % default values for option variables
 opts_default.verbose = 0;                       % display intermediate results
