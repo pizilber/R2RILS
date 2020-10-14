@@ -13,7 +13,7 @@ INIT_WITH_SVD = 0
 INIT_WITH_RANDOM = 1
 INIT_WITH_USER_DEFINED = 2
 
-def R2RILS(X, omega, rank, verbose=True, max_iter=50,
+def R2RILS(X, omega, rank, verbose=True, max_iter=100,
            lsqr_col_norm=False, lsqr_max_iter=1000, lsqr_tol=1e-15,
            lsqr_smart_tol=True, lsqr_smart_obj_min=1e-5,
            init_option=INIT_WITH_SVD , init_U=None, init_V=None,
