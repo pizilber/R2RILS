@@ -18,8 +18,8 @@ def run_demo():
     options = {
         # for documentation of these options, see the definition of R2RILS routine
         # general
-        'verbose' : True,
-        'max_iter' : 50,
+        'verbose' : False,
+        'max_iter' : 100,
         # least-squares parameters
         'lsqr_col_norm': False,
         'lsqr_max_iter': 1000,
