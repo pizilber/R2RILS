@@ -105,8 +105,8 @@ for loop_idx = 1:opts.max_iter
     
     % determine tolerance for LSQR solver
     LSQR_tol = opts.LSQR_tol;
-    if opts.LSQR_smart_tol
-        LSQR_tol = min(opts.LSQR_smart_obj_min, current_observed_RMSE^2);
+    if opts.LSQR_smart_tol && current_observed_RMSE < opts.LSQR_smart_obj_min
+        LSQR_tol = min(LSQR_tol, current_observed_RMSE^2);
     end
     LSQR_tol = max(LSQR_tol, 2*eps);    % to supress warning
     % solve the least squares problem
