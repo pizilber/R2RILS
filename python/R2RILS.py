@@ -80,8 +80,8 @@ def R2RILS(X, omega, rank, verbose=True, max_iter=100,
         
         # determine LSQR tolerance
         tol = lsqr_tol
-        if lsqr_smart_tol:
-          tol = min(lsqr_smart_obj_min, objective**2)
+        if lsqr_smart_tol and objective < lsqr_smart_obj_min:
+          tol = min(tol, objective**2)
         
         # solve the least squares problem
         A = generate_sparse_A(U, V, omega, sparse_matrix_rows, sparse_matrix_columns, num_visible_entries, m, n,
