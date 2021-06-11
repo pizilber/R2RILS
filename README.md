@@ -1,5 +1,5 @@
 # R2RILS
-This repository contains `Python` and `Matlab` implementations for `R2RILS` as described in J. Bauch, B. Nadler and P. Zilber (2020), available in preprint [link](https://arxiv.org/abs/2002.01849), as well as simple demos demonstrating the usage of the `Python` and `Matlab` implementations.
+This repository contains `Python` and `Matlab` implementations for `R2RILS` as described in J. Bauch, B. Nadler and P. Zilber (2021), available in [SIMODS](https://epubs.siam.org/doi/abs/10.1137/20M1315294) or [arXiv](https://arxiv.org/abs/2002.01849), as well as simple demos demonstrating the usage of the `Python` and `Matlab` implementations.
 ## Usage
 #### Python
 The entry point to run `R2RILS` is a function with the same name which expects the following parameters:
